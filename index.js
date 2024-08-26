@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // Mongoose models for Menu Items and Orders
-const MenuItem = require("../models/MenuItem");
-const Order = require("../models/Order");
+const MenuItem = require("./models/MenuItem");
+const Order = require("./models/Order");
 
 app.get("/", (req, res) => res.send("MunchMate backend works"));
 
